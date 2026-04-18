@@ -101,21 +101,7 @@ function App() {
 }
 
 const styles = {
-  container: { 
-  minHeight: "100vh", 
-  width: "100vw", 
-  display: "flex", 
-  justifyContent: "center", 
-  alignItems: "center", 
-  backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('${currentBG}')`,
-  backgroundSize: "cover",      /* 👈 This stretches the image to fit */
-  backgroundPosition: "center", /* 👈 This keeps the center of the photo visible */
-  backgroundRepeat: "no-repeat",/* 👈 This prevents the "tiling" effect */
-  backgroundAttachment: "fixed",/* 👈 This keeps the BG steady if you scroll */
-  margin: 0,
-  padding: "15px", 
-  fontFamily: "'Montserrat', sans-serif" 
-},
+  container: { minHeight: "100vh", display: "flex",width: "100vw", justifyContent: "center", alignItems: "center", backgroundSize: "cover", backgroundPosition: "center", padding: "15px", fontFamily: "'Montserrat', sans-serif" },
   glassCard: { background: "rgba(255, 255, 255, 0.95)", width: "100%", maxWidth: "380px", padding: "40px 30px", borderRadius: "25px", textAlign: "center", boxShadow: "0 10px 30px rgba(0,0,0,0.3)" },
   title: { fontSize: "24px", marginBottom: "10px", color: "#1b5e20", fontWeight: "700" },
   subtitle: { fontSize: "16px", marginBottom: "8px", fontFamily:"serif" },
