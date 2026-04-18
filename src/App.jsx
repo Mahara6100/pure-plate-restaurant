@@ -101,7 +101,21 @@ function App() {
 }
 
 const styles = {
-  container: { minHeight: "100vh", display: "flex", justifyContent: "center", alignItems: "center", backgroundSize: "cover", backgroundPosition: "center", padding: "15px", fontFamily: "'Montserrat', sans-serif" },
+  container: { 
+  minHeight: "100vh", 
+  width: "100vw", 
+  display: "flex", 
+  justifyContent: "center", 
+  alignItems: "center", 
+  backgroundSize: "cover", 
+  backgroundPosition: "center", 
+  backgroundAttachment: "fixed", // 👈 Add this to lock the BG
+  backgroundRepeat: "no-repeat", // 👈 Add this to prevent tiling
+  padding: "15px", 
+  margin: 0,                     // 👈 Ensure no margin
+  boxSizing: "border-box", 
+  fontFamily: "'Montserrat', sans-serif" 
+},
   glassCard: { background: "rgba(255, 255, 255, 0.95)", width: "100%", maxWidth: "380px", padding: "40px 30px", borderRadius: "25px", textAlign: "center", boxShadow: "0 10px 30px rgba(0,0,0,0.3)" },
   title: { fontSize: "24px", marginBottom: "10px", color: "#1b5e20", fontWeight: "700" },
   subtitle: { fontSize: "16px", marginBottom: "8px", fontFamily:"serif" },
